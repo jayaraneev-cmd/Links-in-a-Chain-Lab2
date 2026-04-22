@@ -1,15 +1,21 @@
+#ifndef LINK_HPP
+#define LINK_HPP
+
 #include <string>
+using namespace std;
 
 class Link {
-  private:
-    std::string material;
+private:
+  string material;
 
-  public:
-    Link(std::string material) {
-      this->material = material;
-    }
+public:
+  Link(string material) {
+    this->material = material;
+  }
 
-    std::string get_material() {
-      return this->material;
-    }
-}
+  string get_material() {
+    return this->material;
+  }
+};
+
+#endif
